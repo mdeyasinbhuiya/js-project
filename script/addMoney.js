@@ -1,5 +1,5 @@
 const addMoney = document
-  .getElementById("add-money")
+  .getElementById("money-add")
   .addEventListener("click", function (event) {
     event.preventDefault();
     const amount = document.getElementById("amount").value;
