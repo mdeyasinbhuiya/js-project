@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <!-- ! daisyUi and tailwind added -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="bg-gray-100 max-w-md h-screen mx-auto">
+      <header>
+        <nav class="pt-16">
+          <div class="w-2/4 h-36 mx-auto relative">
+            <img class="w-48 mx-auto" src="./assets/bg.png" alt="" />
+            <img
+              class="w-16 absolute top-14 left-20"
+              src="./assets/Group.png"
+              alt=""
+            />
+          </div>
+        </nav>
+        <!-- section banner -->
+        <div class="w-5/6 mx-auto">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Account Number</span>
+                  </label>
+                  <input
+                    id="acc-num"
+                    value="01867599799"
+                    type="number"
+                    placeholder="Type your Number"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input
+                    id="acc-pin"
+                    value="1234"
+                    type="text"
+                    placeholder="Type Your Pin"
+                    class="input input-bordered"
+                    required
+                  />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover font-bold"
+                      >Forgot Pin?</a
+                    >
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button id="login-btn" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <script src="./script/first.js"></script>
+  </body>
+</html>
